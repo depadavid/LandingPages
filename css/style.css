@@ -1,1 +1,140 @@
-@import url(variables.css);
+@import url("variables.css");
+
+:root {
+    /* --mobile:; */
+    --desktop: 1500px;
+
+    --color-primary: #EFAF64;
+    --color-secondary: #fff;
+    --color-ternary: #FAEFE3;
+    --color-extra: #FE6E06;
+    --color-text: #333333;
+
+    --radius: 4rem;
+
+    --font-family-1: 'Times New Roman', Times, serif;
+    --font-family-2: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-family-1);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    width: var(--desktop);
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+.container__bg-1 {
+    /* position: absolute;
+    top: 80%; */
+    height: 80vh;
+}
+
+.container__bg-2 {
+    /* position:  */
+    position: absolute;
+    top: -5rem;
+    right: 3rem;
+}
+
+.container__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding-left: 3rem;
+}
+
+.content__title {
+    color: var(--color-secondary);
+    font-size: 8rem;
+    margin: 0;
+    font-weight: 400;
+    text-wrap: wrap;
+}
+
+.content__text {
+    font-family: var(--font-family-2);
+    color: var(--color-secondary);
+    line-height: 1.5;
+    margin-block: 2rem;
+    font-size: 1.3rem;
+}
+
+.content__btn {
+    display: inline-block;
+    color: var(--color-secondary);
+    background-color: var(--color-extra);
+    border-radius: var(--radius);
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-family: var(--font-family-2);
+}
+
+.content__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card {
+    --radius: 1rem;
+    background-color: #FAEFE3;
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.card__icon span {
+    color: var(--color-extra);
+}
+
+.card__title,
+.card__text {
+    font-family: var(--font-family-2);
+}
+
+.card__title {
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    /* background: url("../storage/img/shape.png") 50% no-repeat; */
+}
