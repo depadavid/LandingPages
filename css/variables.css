@@ -1,3 +1,10 @@
 :root {
     --color-blanco:white;
+    --color-lateral:#09212C;
+    --blanco-transparente:rgba(255, 255, 255, 0.603);
+    --color-amarillo: yellow;
+    --color-aqua: aqua;
+    --green-yellow:greenyellow;
+    --color-salmon:salmon;
+    --cuadro-azul:#3D45FF;
 }
